@@ -3,7 +3,7 @@ import PageNotFound from './pages/PageNotFound';
 import Home from './pages/Home.jsx';
 import PokemonDetails from './pages/PokemonDetails.jsx';
 import NewPokemonCard from './pages/NewPokemonCard.jsx';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <SpeedInsights></SpeedInsights>
+      
     </>
 
   )
