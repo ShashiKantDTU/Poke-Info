@@ -1,0 +1,929 @@
+:root {
+    --normal-shadow-color: rgba(183, 183, 183, 0.8);
+    --normal-shadow-color-light: rgba(142, 142, 142, 0.8);
+    --normal-shadow-color-dark: rgba(102, 102, 102, 0.8);
+    
+    --fire-shadow-color: rgba(255, 152, 67, 0.8);
+    --fire-shadow-color-light: rgba(230, 94, 25, 0.8);
+    --fire-shadow-color-dark: rgba(191, 74, 12, 0.8);
+    
+    --water-shadow-color: rgba(100, 181, 246, 0.8);
+    --water-shadow-color-light: rgba(33, 150, 243, 0.8);
+    --water-shadow-color-dark: rgba(25, 118, 210, 0.8);
+    
+    --grass-shadow-color: rgba(129, 199, 132, 0.8);
+    --grass-shadow-color-light: rgba(76, 175, 80, 0.8);
+    --grass-shadow-color-dark: rgba(56, 142, 60, 0.8);
+    
+    --electric-shadow-color: rgba(185, 169, 30, 0.8);
+    --electric-shadow-color-light: rgba(213, 178, 0, 0.8);
+    --electric-shadow-color-dark: rgba(255, 160, 0, 0.8);
+    
+    --ice-shadow-color: rgba(128, 222, 234, 0.8);
+    --ice-shadow-color-light: rgba(77, 208, 225, 0.8);
+    --ice-shadow-color-dark: rgba(38, 198, 218, 0.8);
+    
+    --fighting-shadow-color: rgba(244, 81, 30, 0.8);
+    --fighting-shadow-color-light: rgba(216, 67, 21, 0.8);
+    --fighting-shadow-color-dark: rgba(191, 54, 12, 0.8);
+    
+    --poison-shadow-color: rgba(186, 104, 200, 0.8);
+    --poison-shadow-color-light: rgba(171, 71, 188, 0.8);
+    --poison-shadow-color-dark: rgba(142, 36, 170, 0.8);
+    
+    --ground-shadow-color: rgba(215, 204, 200, 0.8);
+    --ground-shadow-color-light: rgba(187, 170, 164, 0.8);
+    --ground-shadow-color-dark: rgba(141, 110, 99, 0.8);
+    
+    --flying-shadow-color: rgba(144, 202, 249, 0.8);
+    --flying-shadow-color-light: rgba(100, 181, 246, 0.8);
+    --flying-shadow-color-dark: rgba(66, 165, 245, 0.8);
+    
+    --psychic-shadow-color: rgba(244, 143, 177, 0.8);
+    --psychic-shadow-color-light: rgba(240, 98, 146, 0.8);
+    --psychic-shadow-color-dark: rgba(233, 30, 99, 0.8);
+    
+    --bug-shadow-color: rgba(174, 213, 129, 0.8);
+    --bug-shadow-color-light: rgba(156, 204, 101, 0.8);
+    --bug-shadow-color-dark: rgba(139, 195, 74, 0.8);
+    
+    --rock-shadow-color: rgba(161, 136, 127, 0.8);
+    --rock-shadow-color-light: rgba(141, 110, 99, 0.8);
+    --rock-shadow-color-dark: rgba(109, 76, 65, 0.8);
+    
+    --ghost-shadow-color: rgba(149, 117, 205, 0.8);
+    --ghost-shadow-color-light: rgba(126, 87, 194, 0.8);
+    --ghost-shadow-color-dark: rgba(103, 58, 183, 0.8);
+    
+    --dragon-shadow-color: rgba(121, 134, 203, 0.8);
+    --dragon-shadow-color-light: rgba(92, 107, 176, 0.8);
+    --dragon-shadow-color-dark: rgba(63, 81, 181, 0.8);
+    
+    --dark-shadow-color: rgba(117, 117, 117, 0.8);
+    --dark-shadow-color-light: rgba(97, 97, 97, 0.8);
+    --dark-shadow-color-dark: rgba(66, 66, 66, 0.8);
+    
+    --steel-shadow-color: rgba(207, 216, 220, 0.8);
+    --steel-shadow-color-light: rgba(176, 188, 197, 0.8);
+    --steel-shadow-color-dark: rgba(144, 164, 174, 0.8);
+    
+    --fairy-shadow-color: rgba(248, 187, 208, 0.8);
+    --fairy-shadow-color-light: rgba(244, 143, 177, 0.8);
+    --fairy-shadow-color-dark: rgba(236, 64, 122, 0.8);
+    
+    --stellar-shadow-color: rgba(255, 238, 88, 0.8);
+    --stellar-shadow-color-light: rgba(251, 192, 45, 0.8);
+    --stellar-shadow-color-dark: rgba(245, 127, 23, 0.8);
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(2, 2, 6) 0%, rgb(5, 5, 18) 35%, rgb(0, 0, 0) 100%);
+}
+.NewPokemonCard-main-container {
+    /* opacity: 0.5; */
+    height: 364px;
+    width: 229px;
+    min-width: 229px;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.3s ease;
+    animation: rotate 0.5s ease-in ;
+}
+
+.NewPokemonCard-main-container:hover {
+    transform: scale(1.05);
+    
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+      /* scale: 0.3; */
+      opacity: 0;
+      backdrop-filter: blur(50px);
+    }
+    100% {
+      opacity: 1;
+      /* scale: 1; */
+      transform: rotate3d(0, 1, 0, 360deg);
+      backdrop-filter: blur(0px);
+    }
+    
+  }
+  
+
+
+
+.NewPokemonCard-card {
+    box-sizing: border-box;
+    height: 80%;
+    width: 100%;
+    background: linear-gradient(to bottom, #224b3cf1, #1f4449f1,  #39335cf1), url("/Cardbg1.png");
+    background-size: cover;
+    border-radius: 10px;
+    /* padding-right: 4px;
+    padding-left: 4px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NewPokemonCard-card.Fighting:hover .NewPokemonCard-imagecontainer img {
+    animation: movefighting 10s linear infinite !important;
+}
+.NewPokemonCard-card.Normal:hover .NewPokemonCard-imagecontainer img {
+    animation: movenormal 10s linear infinite !important;
+}
+.NewPokemonCard-card.Fire:hover .NewPokemonCard-imagecontainer img {
+    animation: movefire 10s linear infinite !important;
+}
+.NewPokemonCard-card.Water:hover .NewPokemonCard-imagecontainer img {
+    animation: movewater 10s linear infinite !important;
+}
+.NewPokemonCard-card.Grass:hover .NewPokemonCard-imagecontainer img {
+    animation: movegrass 10s linear infinite !important;
+}
+.NewPokemonCard-card.Electric:hover .NewPokemonCard-imagecontainer img {
+    animation: moveelectric 10s linear infinite !important;
+}
+.NewPokemonCard-card.Ice:hover .NewPokemonCard-imagecontainer img {
+    animation: moveice 10s linear infinite !important;
+}
+.NewPokemonCard-card.Poison:hover .NewPokemonCard-imagecontainer img {
+    animation: movepoison 10s linear infinite !important;
+}
+.NewPokemonCard-card.Ground:hover .NewPokemonCard-imagecontainer img {
+    animation: moveground 10s linear infinite !important;
+}
+.NewPokemonCard-card.Flying:hover .NewPokemonCard-imagecontainer img {
+    animation: moveflying 10s linear infinite !important;
+}
+.NewPokemonCard-card.Psychic:hover .NewPokemonCard-imagecontainer img {
+    animation: movepsychic 10s linear infinite !important;
+}
+.NewPokemonCard-card.Bug:hover .NewPokemonCard-imagecontainer img {
+    animation: movebug 10s linear infinite !important;
+}
+.NewPokemonCard-card.Rock:hover .NewPokemonCard-imagecontainer img {
+    animation: moverock 10s linear infinite !important;
+}
+.NewPokemonCard-card.Ghost:hover .NewPokemonCard-imagecontainer img {
+    animation: moveghost 10s linear infinite !important;
+}
+.NewPokemonCard-card.Dragon:hover .NewPokemonCard-imagecontainer img {
+    animation: movedragon 10s linear infinite !important;
+}
+.NewPokemonCard-card.Dark:hover .NewPokemonCard-imagecontainer img {
+    animation: movedark 10s linear infinite !important;
+}
+.NewPokemonCard-card.Steel:hover .NewPokemonCard-imagecontainer img {
+    animation: movesteel 10s linear infinite !important;
+}
+.NewPokemonCard-card.Fairy:hover .NewPokemonCard-imagecontainer img {
+    animation: movefairy 10s linear infinite !important;
+}
+.NewPokemonCard-card.Stellar:hover .NewPokemonCard-imagecontainer img {
+    animation: movestellar 10s linear infinite !important;
+}
+
+
+
+.NewPokemonCard-card:hover .NewPokemonCard-imagecontainer img {
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in;
+
+}
+/* KEY FRAMES */
+/* Normal Type */
+@keyframes movenormal {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--normal-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--normal-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--normal-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--normal-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--normal-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fire Type */
+@keyframes movefire {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--fire-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--fire-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--fire-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--fire-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--fire-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Water Type */
+@keyframes movewater {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--water-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--water-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--water-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--water-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--water-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Grass Type */
+@keyframes movegrass {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--grass-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--grass-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--grass-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--grass-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--grass-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Electric Type */
+@keyframes moveelectric {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--electric-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--electric-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--electric-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--electric-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--electric-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Ice Type */
+@keyframes moveice {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--ice-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--ice-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--ice-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--ice-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--ice-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fighting Type */
+@keyframes movefighting {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--fighting-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--fighting-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--fighting-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--fighting-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--fighting-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Poison Type */
+@keyframes movepoison {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--poison-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--poison-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--poison-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--poison-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--poison-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Ground Type */
+@keyframes moveground {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--ground-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--ground-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--ground-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--ground-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--ground-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Flying Type */
+@keyframes moveflying {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--flying-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--flying-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--flying-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--flying-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--flying-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Psychic Type */
+@keyframes movepsychic {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--psychic-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--psychic-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--psychic-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--psychic-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--psychic-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Bug Type */
+@keyframes movebug {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--bug-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--bug-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--bug-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--bug-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--bug-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Rock Type */
+@keyframes moverock {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--rock-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--rock-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--rock-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--rock-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--rock-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Ghost Type */
+@keyframes moveghost {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--ghost-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--ghost-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--ghost-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--ghost-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--ghost-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Dragon Type */
+@keyframes movedragon {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--dragon-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--dragon-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--dragon-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--dragon-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--dragon-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Dark Type */
+@keyframes movedark {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--dark-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--dark-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--dark-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--dark-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--dark-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Steel Type */
+@keyframes movesteel {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--steel-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--steel-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--steel-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--steel-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--steel-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fairy Type */
+@keyframes movefairy {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--fairy-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--fairy-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--fairy-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--fairy-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--fairy-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Stellar Type */
+@keyframes movestellar {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px var(--stellar-shadow-color));
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+    20% {
+        filter: drop-shadow(0 0 12px var(--stellar-shadow-color-light));
+        transform: perspective(1000px) rotateX(7.5deg) rotateY(-5deg) scale(1.05);
+        opacity: 0.95;
+    }
+    40% {
+        filter: drop-shadow(0 0 20px var(--stellar-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-5deg) rotateY(10deg) scale(1);
+        opacity: 1;
+    }
+    60% {
+        filter: drop-shadow(0 0 25px var(--stellar-shadow-color-light));
+        transform: perspective(1000px) rotateX(5deg) rotateY(-7.5deg) scale(1.05);
+        opacity: 0.98;
+    }
+    80% {
+        filter: drop-shadow(0 0 15px var(--stellar-shadow-color-dark));
+        transform: perspective(1000px) rotateX(-7.5deg) rotateY(7.5deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.NewPokemonCard-imagecontainer {
+    height: 43%;
+    width: 100%;
+    display: flex;
+    /* background-color: blue; */
+    justify-content: center;
+    z-index: 1;
+}
+
+.NewPokemonCard-idtext {
+    text-align: start;
+    height: 7%;
+    width: 100%;
+    z-index: 2;
+}
+.NewPokemonCard-idtext p {
+    
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    padding: 2px 5px 2px 0;
+    width: 19%;
+    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px; */
+    border-bottom-right-radius: 10px;
+
+    background-color: rgba(238, 240, 230, 0.451);
+}
+
+
+
+
+.NewPokemonCard-imagecontainer img {
+    width: 90%;
+    padding-left: 10px;
+    align-self: flex-end;
+    justify-self: center;  
+    
+    
+}
+
+
+.NewPokemonCard-content {
+    height: 40%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.NewPokemonCard-name {
+    margin-top: -10px;
+    text-align: center;
+    color: white;
+    max-height: 38%;
+margin-bottom: 10px;
+}
+
+.NewPokemonCard-name h1 {
+    font-size: 32px;
+    margin: 0px 0 0 0;
+    padding: 0;
+}
+
+.NewPokemonCard-types {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    font-size: 18px;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px 0 5px 0;
+}
+
+.NewPokemonCard-type1 {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    width: 30%;
+    text-align: center;
+   
+}
+.NewPokemonCard-type2 {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    width: 30%;
+    text-align: center;
+   
+}
+
+.NewPokemonCard-heightandweight {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px 0 5px 0;
+}
+
+
+.NewPokemonCard-height {
+ /* border: solid 1px red;    */
+ text-align: center;
+ 
+}
+
+.NewPokemonCard-heighttext {
+    /* border: solid 1px red;    */
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.NewPokemonCard-heightvalue {
+    /* border: solid 1px red;    */
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 0 0 0;
+}
+
+.NewPokemonCard-weight {
+    /* border: solid 1px red;    */
+    text-align: center;
+}
+
+.NewPokemonCard-weighttext {
+    /* border: solid 1px red;    */
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.NewPokemonCard-weightvalue {
+    /* border: solid 1px red;    */
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 0 0 0;
+}
+
+.NewPokemonCard-details {
+    height: 10%;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.NewPokemonCard-details a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 60%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 5px 2px 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.NewPokemonCard-details a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    transition: width 0.4s ease-in;
+}

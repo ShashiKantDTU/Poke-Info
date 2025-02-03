@@ -1,0 +1,1929 @@
+{
+  "698": {
+    "name": "amaura",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "meteor-beam",
+        "type": "rock",
+        "power": 120,
+        "score": 123.0
+      },
+      {
+        "move": "blizzard",
+        "type": "ice",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "stone-edge",
+        "type": "rock",
+        "power": 100,
+        "score": 108.0
+      },
+      {
+        "move": "ice-beam",
+        "type": "ice",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 94.0
+      },
+      {
+        "move": "rock-slide",
+        "type": "rock",
+        "power": 75,
+        "score": 91.5
+      }
+    ]
+  },
+  "699": {
+    "name": "aurorus",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "meteor-beam",
+        "type": "rock",
+        "power": 120,
+        "score": 123.0
+      },
+      {
+        "move": "blizzard",
+        "type": "ice",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "stone-edge",
+        "type": "rock",
+        "power": 100,
+        "score": 108.0
+      },
+      {
+        "move": "ice-beam",
+        "type": "ice",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 94.0
+      }
+    ]
+  },
+  "700": {
+    "name": "sylveon",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "misty-explosion",
+        "type": "fairy",
+        "power": 100,
+        "score": 110.0
+      },
+      {
+        "move": "last-resort",
+        "type": "normal",
+        "power": 140,
+        "score": 108.0
+      },
+      {
+        "move": "moonblast",
+        "type": "fairy",
+        "power": 95,
+        "score": 106.5
+      },
+      {
+        "move": "play-rough",
+        "type": "fairy",
+        "power": 90,
+        "score": 102.0
+      },
+      {
+        "move": "dazzling-gleam",
+        "type": "fairy",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "701": {
+    "name": "hawlucha",
+    "top_moves": [
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "focus-punch",
+        "type": "fighting",
+        "power": 150,
+        "score": 145.0
+      },
+      {
+        "move": "high-jump-kick",
+        "type": "fighting",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "superpower",
+        "type": "fighting",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "close-combat",
+        "type": "fighting",
+        "power": 120,
+        "score": 124.0
+      }
+    ]
+  },
+  "702": {
+    "name": "dedenne",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "thunder",
+        "type": "electric",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "last-resort",
+        "type": "normal",
+        "power": 140,
+        "score": 108.0
+      },
+      {
+        "move": "thunderbolt",
+        "type": "electric",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "wild-charge",
+        "type": "electric",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "play-rough",
+        "type": "fairy",
+        "power": 90,
+        "score": 102.0
+      }
+    ]
+  },
+  "703": {
+    "name": "carbink",
+    "top_moves": [
+      {
+        "move": "explosion",
+        "type": "normal",
+        "power": 250,
+        "score": 185.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "meteor-beam",
+        "type": "rock",
+        "power": 120,
+        "score": 123.0
+      },
+      {
+        "move": "misty-explosion",
+        "type": "fairy",
+        "power": 100,
+        "score": 110.0
+      },
+      {
+        "move": "stone-edge",
+        "type": "rock",
+        "power": 100,
+        "score": 108.0
+      },
+      {
+        "move": "moonblast",
+        "type": "fairy",
+        "power": 95,
+        "score": 106.5
+      }
+    ]
+  },
+  "704": {
+    "name": "goomy",
+    "top_moves": [
+      {
+        "move": "draco-meteor",
+        "type": "dragon",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "dragon-pulse",
+        "type": "dragon",
+        "power": 85,
+        "score": 99.5
+      },
+      {
+        "move": "hydro-pump",
+        "type": "water",
+        "power": 110,
+        "score": 85.0
+      },
+      {
+        "move": "dragon-breath",
+        "type": "dragon",
+        "power": 60,
+        "score": 82.0
+      },
+      {
+        "move": "iron-tail",
+        "type": "steel",
+        "power": 100,
+        "score": 77.5
+      },
+      {
+        "move": "sludge-wave",
+        "type": "poison",
+        "power": 95,
+        "score": 76.5
+      }
+    ]
+  },
+  "705": {
+    "name": "sliggoo",
+    "top_moves": [
+      {
+        "move": "draco-meteor",
+        "type": "dragon",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "dragon-pulse",
+        "type": "dragon",
+        "power": 85,
+        "score": 99.5
+      },
+      {
+        "move": "blizzard",
+        "type": "ice",
+        "power": 110,
+        "score": 84.0
+      },
+      {
+        "move": "thunder",
+        "type": "electric",
+        "power": 110,
+        "score": 84.0
+      },
+      {
+        "move": "dragon-breath",
+        "type": "dragon",
+        "power": 60,
+        "score": 82.0
+      },
+      {
+        "move": "iron-tail",
+        "type": "steel",
+        "power": 100,
+        "score": 77.5
+      }
+    ]
+  },
+  "706": {
+    "name": "goodra",
+    "top_moves": [
+      {
+        "move": "draco-meteor",
+        "type": "dragon",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "focus-punch",
+        "type": "fighting",
+        "power": 150,
+        "score": 115.0
+      },
+      {
+        "move": "dragon-pulse",
+        "type": "dragon",
+        "power": 85,
+        "score": 99.5
+      },
+      {
+        "move": "dragon-claw",
+        "type": "dragon",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "707": {
+    "name": "klefki",
+    "top_moves": [
+      {
+        "move": "steel-beam",
+        "type": "steel",
+        "power": 140,
+        "score": 137.5
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "last-resort",
+        "type": "normal",
+        "power": 140,
+        "score": 108.0
+      },
+      {
+        "move": "play-rough",
+        "type": "fairy",
+        "power": 90,
+        "score": 102.0
+      },
+      {
+        "move": "flash-cannon",
+        "type": "steel",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "dazzling-gleam",
+        "type": "fairy",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "708": {
+    "name": "phantump",
+    "top_moves": [
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 139.0
+      },
+      {
+        "move": "wood-hammer",
+        "type": "grass",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "poltergeist",
+        "type": "ghost",
+        "power": 110,
+        "score": 116.0
+      },
+      {
+        "move": "energy-ball",
+        "type": "grass",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "phantom-force",
+        "type": "ghost",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "shadow-ball",
+        "type": "ghost",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "seed-bomb",
+        "type": "grass",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "709": {
+    "name": "trevenant",
+    "top_moves": [
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 139.0
+      },
+      {
+        "move": "leaf-storm",
+        "type": "grass",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "wood-hammer",
+        "type": "grass",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "poltergeist",
+        "type": "ghost",
+        "power": 110,
+        "score": 116.0
+      },
+      {
+        "move": "energy-ball",
+        "type": "grass",
+        "power": 90,
+        "score": 103.0
+      }
+    ]
+  },
+  "710": {
+    "name": "pumpkaboo-average",
+    "top_moves": [
+      {
+        "move": "explosion",
+        "type": "normal",
+        "power": 250,
+        "score": 185.0
+      },
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 139.0
+      },
+      {
+        "move": "poltergeist",
+        "type": "ghost",
+        "power": 110,
+        "score": 116.0
+      },
+      {
+        "move": "energy-ball",
+        "type": "grass",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "shadow-ball",
+        "type": "ghost",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "seed-bomb",
+        "type": "grass",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "giga-drain",
+        "type": "grass",
+        "power": 75,
+        "score": 92.5
+      }
+    ]
+  },
+  "711": {
+    "name": "gourgeist-average",
+    "top_moves": [
+      {
+        "move": "explosion",
+        "type": "normal",
+        "power": 250,
+        "score": 185.0
+      },
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 139.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "power-whip",
+        "type": "grass",
+        "power": 120,
+        "score": 122.5
+      },
+      {
+        "move": "poltergeist",
+        "type": "ghost",
+        "power": 110,
+        "score": 116.0
+      },
+      {
+        "move": "energy-ball",
+        "type": "grass",
+        "power": 90,
+        "score": 103.0
+      }
+    ]
+  },
+  "712": {
+    "name": "bergmite",
+    "top_moves": [
+      {
+        "move": "blizzard",
+        "type": "ice",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "ice-beam",
+        "type": "ice",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "ice-spinner",
+        "type": "ice",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "double-edge",
+        "type": "normal",
+        "power": 120,
+        "score": 94.0
+      },
+      {
+        "move": "ice-fang",
+        "type": "ice",
+        "power": 65,
+        "score": 85.0
+      },
+      {
+        "move": "avalanche",
+        "type": "ice",
+        "power": 60,
+        "score": 82.0
+      },
+      {
+        "move": "frost-breath",
+        "type": "ice",
+        "power": 60,
+        "score": 81.0
+      }
+    ]
+  },
+  "713": {
+    "name": "avalugg",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "skull-bash",
+        "type": "normal",
+        "power": 130,
+        "score": 116.0
+      },
+      {
+        "move": "blizzard",
+        "type": "ice",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "ice-beam",
+        "type": "ice",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "icicle-crash",
+        "type": "ice",
+        "power": 85,
+        "score": 98.5
+      },
+      {
+        "move": "ice-spinner",
+        "type": "ice",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "714": {
+    "name": "noibat",
+    "top_moves": [
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "draco-meteor",
+        "type": "dragon",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "hurricane",
+        "type": "flying",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 109.0
+      },
+      {
+        "move": "dragon-rush",
+        "type": "dragon",
+        "power": 100,
+        "score": 107.5
+      },
+      {
+        "move": "fly",
+        "type": "flying",
+        "power": 90,
+        "score": 102.5
+      }
+    ]
+  },
+  "715": {
+    "name": "noivern",
+    "top_moves": [
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "draco-meteor",
+        "type": "dragon",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "hurricane",
+        "type": "flying",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 109.0
+      }
+    ]
+  },
+  "716": {
+    "name": "xerneas",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "misty-explosion",
+        "type": "fairy",
+        "power": 100,
+        "score": 110.0
+      },
+      {
+        "move": "moonblast",
+        "type": "fairy",
+        "power": 95,
+        "score": 106.5
+      },
+      {
+        "move": "play-rough",
+        "type": "fairy",
+        "power": 90,
+        "score": 102.0
+      },
+      {
+        "move": "dazzling-gleam",
+        "type": "fairy",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 94.0
+      }
+    ]
+  },
+  "717": {
+    "name": "yveltal",
+    "top_moves": [
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "hurricane",
+        "type": "flying",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "foul-play",
+        "type": "dark",
+        "power": 95,
+        "score": 106.5
+      },
+      {
+        "move": "fly",
+        "type": "flying",
+        "power": 90,
+        "score": 102.5
+      },
+      {
+        "move": "sucker-punch",
+        "type": "dark",
+        "power": 70,
+        "score": 99.0
+      }
+    ]
+  },
+  "718": {
+    "name": "zygarde-50",
+    "top_moves": [
+      {
+        "move": "draco-meteor",
+        "type": "dragon",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "outrage",
+        "type": "dragon",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "earthquake",
+        "type": "ground",
+        "power": 100,
+        "score": 110.0
+      },
+      {
+        "move": "core-enforcer",
+        "type": "dragon",
+        "power": 100,
+        "score": 110.0
+      },
+      {
+        "move": "high-horsepower",
+        "type": "ground",
+        "power": 95,
+        "score": 106.0
+      }
+    ]
+  },
+  "719": {
+    "name": "diancie",
+    "top_moves": [
+      {
+        "move": "explosion",
+        "type": "normal",
+        "power": 250,
+        "score": 185.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "meteor-beam",
+        "type": "rock",
+        "power": 120,
+        "score": 123.0
+      },
+      {
+        "move": "misty-explosion",
+        "type": "fairy",
+        "power": 100,
+        "score": 110.0
+      },
+      {
+        "move": "diamond-storm",
+        "type": "rock",
+        "power": 100,
+        "score": 109.5
+      },
+      {
+        "move": "last-resort",
+        "type": "normal",
+        "power": 140,
+        "score": 108.0
+      }
+    ]
+  },
+  "720": {
+    "name": "hoopa",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "future-sight",
+        "type": "psychic",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "focus-punch",
+        "type": "fighting",
+        "power": 150,
+        "score": 115.0
+      },
+      {
+        "move": "dream-eater",
+        "type": "psychic",
+        "power": 100,
+        "score": 110.0
+      },
+      {
+        "move": "last-resort",
+        "type": "normal",
+        "power": 140,
+        "score": 108.0
+      },
+      {
+        "move": "psychic",
+        "type": "psychic",
+        "power": 90,
+        "score": 103.0
+      }
+    ]
+  },
+  "721": {
+    "name": "volcanion",
+    "top_moves": [
+      {
+        "move": "explosion",
+        "type": "normal",
+        "power": 250,
+        "score": 185.0
+      },
+      {
+        "move": "self-destruct",
+        "type": "normal",
+        "power": 200,
+        "score": 150.0
+      },
+      {
+        "move": "overheat",
+        "type": "fire",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "flare-blitz",
+        "type": "fire",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "steam-eruption",
+        "type": "water",
+        "power": 110,
+        "score": 116.5
+      }
+    ]
+  },
+  "722": {
+    "name": "rowlet",
+    "top_moves": [
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 139.0
+      },
+      {
+        "move": "leaf-storm",
+        "type": "grass",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "brave-bird",
+        "type": "flying",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "leaf-blade",
+        "type": "grass",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "energy-ball",
+        "type": "grass",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "seed-bomb",
+        "type": "grass",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "723": {
+    "name": "dartrix",
+    "top_moves": [
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 139.0
+      },
+      {
+        "move": "leaf-storm",
+        "type": "grass",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "brave-bird",
+        "type": "flying",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "leaf-blade",
+        "type": "grass",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "energy-ball",
+        "type": "grass",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "seed-bomb",
+        "type": "grass",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "724": {
+    "name": "decidueye",
+    "top_moves": [
+      {
+        "move": "frenzy-plant",
+        "type": "grass",
+        "power": 150,
+        "score": 159.0
+      },
+      {
+        "move": "solar-blade",
+        "type": "grass",
+        "power": 125,
+        "score": 142.5
+      },
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 139.0
+      },
+      {
+        "move": "leaf-storm",
+        "type": "grass",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 122.0
+      }
+    ]
+  },
+  "725": {
+    "name": "litten",
+    "top_moves": [
+      {
+        "move": "overheat",
+        "type": "fire",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "flare-blitz",
+        "type": "fire",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "fire-blast",
+        "type": "fire",
+        "power": 110,
+        "score": 115.5
+      },
+      {
+        "move": "heat-wave",
+        "type": "fire",
+        "power": 95,
+        "score": 105.5
+      },
+      {
+        "move": "flamethrower",
+        "type": "fire",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "fire-pledge",
+        "type": "fire",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "thrash",
+        "type": "normal",
+        "power": 120,
+        "score": 94.0
+      }
+    ]
+  },
+  "726": {
+    "name": "torracat",
+    "top_moves": [
+      {
+        "move": "overheat",
+        "type": "fire",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "flare-blitz",
+        "type": "fire",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "fire-blast",
+        "type": "fire",
+        "power": 110,
+        "score": 115.5
+      },
+      {
+        "move": "heat-wave",
+        "type": "fire",
+        "power": 95,
+        "score": 105.5
+      },
+      {
+        "move": "flamethrower",
+        "type": "fire",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "fire-pledge",
+        "type": "fire",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "thrash",
+        "type": "normal",
+        "power": 120,
+        "score": 94.0
+      }
+    ]
+  },
+  "727": {
+    "name": "incineroar",
+    "top_moves": [
+      {
+        "move": "blast-burn",
+        "type": "fire",
+        "power": 150,
+        "score": 159.0
+      },
+      {
+        "move": "overheat",
+        "type": "fire",
+        "power": 130,
+        "score": 130.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "flare-blitz",
+        "type": "fire",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "fire-blast",
+        "type": "fire",
+        "power": 110,
+        "score": 115.5
+      },
+      {
+        "move": "focus-punch",
+        "type": "fighting",
+        "power": 150,
+        "score": 115.0
+      }
+    ]
+  },
+  "728": {
+    "name": "popplio",
+    "top_moves": [
+      {
+        "move": "hydro-pump",
+        "type": "water",
+        "power": 110,
+        "score": 115.0
+      },
+      {
+        "move": "surf",
+        "type": "water",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "aqua-tail",
+        "type": "water",
+        "power": 90,
+        "score": 102.0
+      },
+      {
+        "move": "waterfall",
+        "type": "water",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "dive",
+        "type": "water",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "scald",
+        "type": "water",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "water-pledge",
+        "type": "water",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "729": {
+    "name": "brionne",
+    "top_moves": [
+      {
+        "move": "hydro-pump",
+        "type": "water",
+        "power": 110,
+        "score": 115.0
+      },
+      {
+        "move": "surf",
+        "type": "water",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "aqua-tail",
+        "type": "water",
+        "power": 90,
+        "score": 102.0
+      },
+      {
+        "move": "waterfall",
+        "type": "water",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "dive",
+        "type": "water",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "scald",
+        "type": "water",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "water-pledge",
+        "type": "water",
+        "power": 80,
+        "score": 96.0
+      }
+    ]
+  },
+  "730": {
+    "name": "primarina",
+    "top_moves": [
+      {
+        "move": "hydro-cannon",
+        "type": "water",
+        "power": 150,
+        "score": 159.0
+      },
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "hydro-pump",
+        "type": "water",
+        "power": 110,
+        "score": 115.0
+      },
+      {
+        "move": "misty-explosion",
+        "type": "fairy",
+        "power": 100,
+        "score": 110.0
+      },
+      {
+        "move": "moonblast",
+        "type": "fairy",
+        "power": 95,
+        "score": 106.5
+      },
+      {
+        "move": "surf",
+        "type": "water",
+        "power": 90,
+        "score": 103.0
+      }
+    ]
+  },
+  "731": {
+    "name": "pikipek",
+    "top_moves": [
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "boomburst",
+        "type": "normal",
+        "power": 140,
+        "score": 138.0
+      },
+      {
+        "move": "brave-bird",
+        "type": "flying",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "uproar",
+        "type": "normal",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "hyper-voice",
+        "type": "normal",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "fly",
+        "type": "flying",
+        "power": 90,
+        "score": 102.5
+      },
+      {
+        "move": "take-down",
+        "type": "normal",
+        "power": 90,
+        "score": 101.5
+      }
+    ]
+  },
+  "732": {
+    "name": "trumbeak",
+    "top_moves": [
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "boomburst",
+        "type": "normal",
+        "power": 140,
+        "score": 138.0
+      },
+      {
+        "move": "brave-bird",
+        "type": "flying",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "uproar",
+        "type": "normal",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "hyper-voice",
+        "type": "normal",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "fly",
+        "type": "flying",
+        "power": 90,
+        "score": 102.5
+      },
+      {
+        "move": "take-down",
+        "type": "normal",
+        "power": 90,
+        "score": 101.5
+      }
+    ]
+  },
+  "733": {
+    "name": "toucannon",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 159.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 159.0
+      },
+      {
+        "move": "sky-attack",
+        "type": "flying",
+        "power": 140,
+        "score": 152.0
+      },
+      {
+        "move": "boomburst",
+        "type": "normal",
+        "power": 140,
+        "score": 138.0
+      },
+      {
+        "move": "brave-bird",
+        "type": "flying",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "hurricane",
+        "type": "flying",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "beak-blast",
+        "type": "flying",
+        "power": 100,
+        "score": 110.0
+      }
+    ]
+  },
+  "734": {
+    "name": "yungoos",
+    "top_moves": [
+      {
+        "move": "last-resort",
+        "type": "normal",
+        "power": 140,
+        "score": 138.0
+      },
+      {
+        "move": "thrash",
+        "type": "normal",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "double-edge",
+        "type": "normal",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "uproar",
+        "type": "normal",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "take-down",
+        "type": "normal",
+        "power": 90,
+        "score": 101.5
+      },
+      {
+        "move": "tera-blast",
+        "type": "normal",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "hyper-fang",
+        "type": "normal",
+        "power": 80,
+        "score": 95.0
+      }
+    ]
+  },
+  "735": {
+    "name": "gumshoos",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 159.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 159.0
+      },
+      {
+        "move": "last-resort",
+        "type": "normal",
+        "power": 140,
+        "score": 138.0
+      },
+      {
+        "move": "thrash",
+        "type": "normal",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "double-edge",
+        "type": "normal",
+        "power": 120,
+        "score": 124.0
+      },
+      {
+        "move": "focus-punch",
+        "type": "fighting",
+        "power": 150,
+        "score": 115.0
+      },
+      {
+        "move": "uproar",
+        "type": "normal",
+        "power": 90,
+        "score": 103.0
+      }
+    ]
+  },
+  "736": {
+    "name": "grubbin",
+    "top_moves": [
+      {
+        "move": "x-scissor",
+        "type": "bug",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "lunge",
+        "type": "bug",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "skitter-smack",
+        "type": "bug",
+        "power": 70,
+        "score": 88.0
+      },
+      {
+        "move": "bug-bite",
+        "type": "bug",
+        "power": 60,
+        "score": 82.0
+      },
+      {
+        "move": "struggle-bug",
+        "type": "bug",
+        "power": 50,
+        "score": 75.0
+      },
+      {
+        "move": "pounce",
+        "type": "bug",
+        "power": 50,
+        "score": 75.0
+      },
+      {
+        "move": "thunderbolt",
+        "type": "electric",
+        "power": 90,
+        "score": 73.0
+      }
+    ]
+  },
+  "737": {
+    "name": "charjabug",
+    "top_moves": [
+      {
+        "move": "thunder",
+        "type": "electric",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "thunderbolt",
+        "type": "electric",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "wild-charge",
+        "type": "electric",
+        "power": 90,
+        "score": 103.0
+      },
+      {
+        "move": "x-scissor",
+        "type": "bug",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "discharge",
+        "type": "electric",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "lunge",
+        "type": "bug",
+        "power": 80,
+        "score": 96.0
+      },
+      {
+        "move": "volt-switch",
+        "type": "electric",
+        "power": 70,
+        "score": 89.0
+      }
+    ]
+  },
+  "738": {
+    "name": "vikavolt",
+    "top_moves": [
+      {
+        "move": "hyper-beam",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "giga-impact",
+        "type": "normal",
+        "power": 150,
+        "score": 129.0
+      },
+      {
+        "move": "zap-cannon",
+        "type": "electric",
+        "power": 120,
+        "score": 119.0
+      },
+      {
+        "move": "thunder",
+        "type": "electric",
+        "power": 110,
+        "score": 114.0
+      },
+      {
+        "move": "supercell-slam",
+        "type": "electric",
+        "power": 100,
+        "score": 109.5
+      },
+      {
+        "move": "solar-beam",
+        "type": "grass",
+        "power": 120,
+        "score": 109.0
+      },
+      {
+        "move": "thunderbolt",
+        "type": "electric",
+        "power": 90,
+        "score": 103.0
+      }
+    ]
+  }
+}

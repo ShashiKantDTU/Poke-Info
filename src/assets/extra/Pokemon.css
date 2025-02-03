@@ -1,0 +1,28 @@
+.navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: darkgray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    
+    
+    z-index: 1000;
+}
+
+.navi a {
+
+    
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navi a:hover {
+    color: purple;
+}
+
+.navi a.active {
+    color: rgb(102, 165, 237);
+}

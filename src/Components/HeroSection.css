@@ -1,0 +1,973 @@
+.fakeroot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: solid;
+  min-width: fit-content;
+}
+
+
+.herocontainer {
+  height: 90%;
+  width: 90%;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/* Hero Aside Container */
+.hero-aside {
+  width: 12%;
+  min-width: 80px;
+  max-width: 100px;
+  height: 100.15%;
+  /* background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-right: 2px solid rgba(255, 255, 255, 0.2); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-sizing: border-box;
+  padding: 20px 0;
+  /* box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1); */
+}
+
+.menu {
+  height: 100%;
+
+}
+
+#menu {
+  overflow-y: scroll;
+  /* Enable vertical scrolling */
+  scrollbar-width: none;
+  /* Hide scrollbar in Firefox */
+}
+
+#menu::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar in Chrome & Safari */
+}
+
+
+
+/* Base Styling for Vertical Buttons */
+.vertical-btn {
+  width: 60px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.vertical-btn span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Vertical Buttons */
+.vertical-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Button Press Effect */
+.vertical-btn:active {
+  transform: scale(0.85);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Triangle Buttons */
+.triangle-btnup,
+.triangle-btndown {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.triangle-btnup {
+  border-bottom: 35px solid rgba(255, 255, 255, 0.2);
+}
+
+.triangle-btndown {
+  border-top: 35px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effect for Triangle Buttons */
+.triangle-btnup:hover,
+.triangle-btndown:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+
+
+/* Active State for Navigation (Page Content) */
+.vertical-btn.active {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+  /* Brighter gradient */
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  /* Glowing border */
+  transform: translateY(-2px) scale(1.02);
+  /* Slightly lifted position */
+  color: #ffdd00;
+  /* Accent text color */
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+  /* Golden glow shadow */
+}
+
+/* Indicator for Active State */
+.vertical-btn.active::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  /* Left-aligned indicator bar */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 80%;
+  background: linear-gradient(to bottom, #ffdd00, rgba(255, 221, 0, 0.4));
+  /* Accent gradient */
+  border-radius: 2px;
+  animation: active-pulse 2s infinite;
+}
+
+/* Hover Adjustment for Active Buttons */
+.vertical-btn.active:hover {
+  transform: translateY(-2px) scale(1.02);
+  /* Maintains active state position */
+  cursor: default;
+  /* Indicates it's already active */
+}
+
+/* Remove Click Effect for Active Buttons */
+.vertical-btn.active:active {
+  transform: translateY(-2px) scale(1.02);
+  /* Prevents scaling when pressed */
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+  /* Preserves active shadow */
+}
+
+/* Animation for Active Indicator */
+@keyframes active-pulse {
+
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
+
+
+
+
+
+
+.herosubcont {
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media (max-width: 600px) {
+
+
+  .herosubcont {
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-main {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .hero-image {
+    height: 30% !important;
+  }
+
+
+
+
+}
+
+.hero-main {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  /* background: rgba(0, 0, 0, 0.08); */
+  /* backdrop-filter: blur(15px); */
+  box-sizing: border-box;
+  /* box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1); */
+  padding: 40px 0 0 20px;
+
+
+  color: #ffffff;
+  /* Background and translucent effect */
+  background: rgba(255, 255, 255, 0.088);
+  /* White background with 80% opacity */
+  backdrop-filter: blur(10px);
+  /* Adds a soft blur effect to the background */
+
+  /* Box shadow for depth */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 1px 8px rgba(0, 0, 0, 0.3);
+
+  /* Rounded corners for a softer look */
+  border-radius: 10px;
+
+  /* Padding to ensure content has space */
+  /* padding: 20px; */
+
+  /* Maintain responsiveness */
+  overflow: hidden;
+  /* Adjusts overflow of content */
+}
+
+.main-pages {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  /* gap: 20px; */
+}
+
+.main-pages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.main-description h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  padding: 0;
+
+}
+
+.description-types {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+
+
+
+}
+
+.descriptiontype {
+  display: flex;
+  flex-direction: column;
+  justify-content: row;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.descriptiontype:hover .descriptiontypetext {
+  width: 50px;
+  box-sizing: border-box;
+
+
+}
+
+.descriptiontypetext {
+  overflow: hidden;
+  width: 0;
+  transition: all 0.4s ease;
+}
+
+.descriptiontypetext p {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 50px 0 0;
+}
+
+.descriptiontype img {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.type1 {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2px 10px 2px 3px;
+}
+
+.type1:hover {
+
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.type1 img {
+
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.type2 {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2px 10px 2px 3px;
+}
+
+.type2:hover {
+
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.type2 img {
+
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+.measurements {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 10px 8px 10px;
+  transition: all 0.4s ease;
+  text-wrap: nowrap;
+}
+
+.measurements:hover {
+
+  transform: scale(1.1);
+  box-sizing: border-box;
+
+}
+
+.height {
+
+  margin-left: 5%;
+}
+
+
+.descriptionpara {
+  flex: 1;
+  max-height: 70%;
+  width: 100%;
+}
+
+.descriptionpara-text {
+  height: 90%;
+  width: 100%;
+  padding-top: 30px;
+  color: rgba(255, 255, 255, 0.9);
+  overflow-y: auto;
+}
+
+.descriptionpara-text:hover {
+  color: rgba(255, 255, 255, 1);
+  /* Fully opaque text on hover */
+}
+
+
+.descriptionpara-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 15px;
+  text-align: justify;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+
+
+.main-stats {
+  width: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.PokemonDetails-detailcontainer-statscontainer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+/* TITLE CONTAINER INSIDE STATS */
+
+.PokemonDetails-detailcontainer-statscontainer-title {
+  height: 15%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.PokemonDetails-detailcontainer-statscontainer-title p {
+  color: #ffffff;
+  font-size: 40px;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+
+
+.PokemonDetails-detailcontainer-statscontainer-stats {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.PokemonDetails-detailcontainer-statscontainer-stats-name {
+  height: 100%;
+  width: 20%;
+  min-width: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  align-items: center;
+}
+
+.PokemonDetails-icons {
+  height: 70%;
+  width: fit-content;
+
+}
+
+.PokemonDetails-icons img {
+  height: 100%;
+  width: 100%;
+}
+
+.PokemonDetails-Hp-text {
+  color: #ec46a7;
+  font-weight: bold;
+
+}
+
+.PokemonDetails-Attack-text {
+  color: #c41717;
+  font-weight: bold;
+
+}
+
+.PokemonDetails-Defense-text {
+  color: #38be13;
+  font-weight: bold;
+
+}
+
+.PokemonDetails-SP-Attack-text {
+  color: #ff6f16;
+  font-weight: bold;
+
+}
+
+.PokemonDetails-SP-Defense-text {
+
+  color: #09ec58;
+  font-weight: bold;
+
+}
+
+.PokemonDetails-Speed-text {
+  color: #38b6ff;
+  font-weight: bold;
+}
+
+
+
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual {
+
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* main outer container (inside two will be two divs for styling purpose */
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-togetwhitebg {
+  background-color: rgba(246, 246, 246, 0.541);
+  border-radius: 10px;
+
+  height: 50%;
+  width: 80%;
+  position: relative;
+
+}
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-togetcolorbg {
+  background-color: rgba(246, 246, 246, 0.541);
+  border-radius: 10px;
+
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-togetborder {
+  /* border-right: solid black; */
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+
+.getborder {
+  width: 10%;
+  height: 50%;
+  border-right: solid black 1px;
+  border-radius: 10px;
+}
+
+
+
+/* ADDING TEMP COLORS CHECK LAYOUT */
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-Hp {
+  width: 40%;
+  background-color: #ec46a7;
+}
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-Attack {
+  width: 60%;
+  background-color: #c41717;
+}
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-Defense {
+  width: 50%;
+  background-color: #38be13;
+}
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-SP-Attack {
+  width: 70%;
+  background-color: #ff6f16;
+}
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-SP-Defense {
+  width: 50%;
+  background-color: #09ec58;
+}
+
+.PokemonDetails-detailcontainer-statscontainer-stats-visual-speed {
+  width: 90%;
+  background-color: #38b6ff;
+}
+
+
+
+
+
+/* 
+
+
+.main-moves {
+  width: 0;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+
+.main-moves h1 {
+  font-size: 60px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.moves-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.moves-card {
+  width: 45%;
+  height: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+}
+
+.card-title p {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.card-contents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+.carditem {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  width: 100%;
+  height: 25%;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  box-sizing: border-box;
+  padding: 2px 10px 2px 3px;
+}
+
+.card-movename {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-movescore {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px ;
+}
+
+.card-image p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-image img {
+  border-radius: 50%;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+} */
+
+
+
+
+
+/* MAIN MOVES CONTAINER ABOVE CUSTOMISED AS MAIN PAGES IN GROUP CLASS FOR ALL CONTAINERS */
+
+.submain-moves {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.moves-allsections {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+
+.moves-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  transition: all 0.4s ease;
+}
+
+.moves-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-title p {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 16px 0;
+}
+
+.card-contents {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.carditem {
+  font-size: 18px;
+}
+
+.card-movename {
+
+  color: white;
+  font-smooth: 25px;
+}
+
+.card-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-image img {
+  width: 32px;
+  margin: 0 0 0 8px;
+  border-radius: 50%;
+}
+
+.movessectionstyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+
+.scrollarea {
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+
+}
+
+.scrollarea::-webkit-scrollbar {
+  display: none;
+}
+
+.moves-scrollcontainer {
+  height: 101%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 5px 0 5px;
+}
+
+
+
+/* Triangle Buttons */
+/* .triangle-btnup,
+.triangle-btndown {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.triangle-btnup {
+  border-bottom: 35px solid rgba(255, 255, 255, 0.2);
+}
+
+.triangle-btndown {
+  border-top: 35px solid rgba(255, 255, 255, 0.2);
+} */
+
+/* Hover Effect for Triangle Buttons */
+/* .triangle-btnup:hover,
+.triangle-btndown:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+  */
+
+
+
+/* 
+
+
+
+  .scrbtn1 {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+    background: none;
+    transition: all 0.3s ease;
+  }
+  
+  .scrbtn5 {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid rgba(255, 255, 255, 0.2);
+    background: none;
+    transition: all 0.3s ease;
+  }
+
+ */
+
+.scrollbtn {
+  width: 19px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.5s ease;
+
+  background: rgba(255, 255, 255, 0.2);
+
+}
+
+
+
+
+
+.main-evolution {
+  width: 0;
+  box-sizing: border-box;
+}
+
+
+
+.hero-image {
+  width: 40%;
+  height: 100%;
+  /* border: solid rebeccapurple; */
+  overflow: hidden;
+}
+
+.hero-image-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid green; */
+}
+
+.hero-image-img img {
+  width: 100%;
+
+}

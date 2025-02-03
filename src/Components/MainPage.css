@@ -1,0 +1,28 @@
+:root {
+    --mainpage-bg: url('/pokemon-in-the-wild.png');
+}
+
+.MainPage-Main-page {
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+
+Main {
+    width: 100%;
+}
