@@ -1,6 +1,4 @@
-Here's the complete content as a .md file that you can directly copy and edit:
 
-```markdown
 # Poke-Info: Interactive Pokémon Data Explorer
 
 ## 🚀 Overview
@@ -31,7 +29,7 @@ Poke-Info is a sophisticated multi-page React application that leverages the Pok
 
 
 ## 📦 Installation & Setup
-```
+
 1. Clone the repository :
 ```bash
 git clone https://github.com/ShashiKantDTU/Poke-Info.git
