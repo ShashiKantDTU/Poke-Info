@@ -1,13 +1,19 @@
  function ReturnRandomArrayofanynum(anynum) {   
     // genrate random list of numbers from one random numeber(1 to 1000) to random + anynum
-    const randomrunber = Math.floor(Math.random() * 500) + 1;
-    const randomrunber2 = randomrunber + 90;
+    const randomnumber = Math.floor(Math.random() * 500) + 1;
+    const randomnumber2 = randomnumber + 90;
 
-    // make a array of all numbers shuffeled from randomrunber to randomrunber2
-    function range(start, end) {
-        return Array(end - start + 1).fill().map((_, idx) => start + idx)
+
+    function createarray(first,last) {
+      const array = [];
+      for(let i = first; i<last; i++){
+        array.push(i)
+      }
+    
+      return array
     }
-    const array = range(randomrunber, randomrunber2-1);
+
+    const array = createarray(randomnumber,randomnumber2)
 
     // shuffle the array
     function shuffleArray(array) {

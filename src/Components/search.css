@@ -82,6 +82,7 @@
 /* Card styling for search results */
 .Search-pokemon-card {
     max-width: 150px;
+    min-width: 80px;
     background: #333; /* Dark gray background */
     border-radius: 20px;
     padding: 5%; /* Relative padding based on card size */

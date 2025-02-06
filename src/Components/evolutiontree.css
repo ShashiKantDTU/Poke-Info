@@ -1,0 +1,121 @@
+/* Main container */
+.evolution-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #f0f0f014, #cccccc0e);
+    min-height: 100vh;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 44px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Toggle Button */
+  .toggle-button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  .toggle-button:hover {
+    background: #555;
+  }
+  
+  /* Evolution Nodes */
+  .evolution-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  
+
+  /* Evolution branches */
+  .evolution-branches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    /* max-width: 600px; */
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  /* Horizontal Layout */
+  .horizontal .evolution-branches {
+    flex-direction: row;
+  }
+  
+  .horizontal .evolution-node {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  /* Animated connecting lines */
+  .branch-line {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 80%;
+    height: 2px;
+    background: gray;
+    transform: translateX(-50%);
+    animation: drawLine 0.5s ease-out forwards;
+  }
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .evolution-branches {
+      flex-wrap: wrap;
+      max-width: 100%;
+    }
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes drawLine {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  
+
+  

@@ -240,12 +240,6 @@ const pokemontypes = {
 }
 
 
-
-
-    function searchclick() {
-        console.log(document.getElementById("search").value);
-    }
-
     const [isdescription, setisdescription] = useState(true);
     const [isstats, setisstats] = useState(false);
     const [ismoves, setismoves] = useState(false);
@@ -261,78 +255,78 @@ const pokemontypes = {
 
 
 
-    function handledescriptionclick() {
+    // function handledescriptionclick() {
 
-        if (!isdescription) {
+    //     if (!isdescription) {
 
-            console.log("description clicked set true");
-            setisdescription(true);
-            setisstats(false);
-            setismoves(false);
-            setiseffects(false);
-            setisevolutions(false);
+    //         console.log("description clicked set true");
+    //         setisdescription(true);
+    //         setisstats(false);
+    //         setismoves(false);
+    //         setiseffects(false);
+    //         setisevolutions(false);
 
-        }
-        else {
-        }
-    }
+    //     }
+    //     else {
+    //     }
+    // }
 
-    function handlestatsclick() {
-        if (!isstats) {
-            console.log("stats clicked set true");
-            setisstats(true);
-            setisdescription(false);
-            setismoves(false);
-            setiseffects(false);
-            setisevolutions(false);
+    // function handlestatsclick() {
+    //     if (!isstats) {
+    //         console.log("stats clicked set true");
+    //         setisstats(true);
+    //         setisdescription(false);
+    //         setismoves(false);
+    //         setiseffects(false);
+    //         setisevolutions(false);
 
-        }
-        else {
-        }
-    }
+    //     }
+    //     else {
+    //     }
+    // }
 
-    function handlemovesclick() {
-        if (!ismoves) {
-            console.log("moves clicked set true");
-            setismoves(true);
-            setisdescription(false);
-            setisstats(false);
-            setiseffects(false);
-            setisevolutions(false);
+    // function handlemovesclick() {
+    //     if (!ismoves) {
+    //         console.log("moves clicked set true");
+    //         setismoves(true);
+    //         setisdescription(false);
+    //         setisstats(false);
+    //         setiseffects(false);
+    //         setisevolutions(false);
 
-        }
-        else {
-        }
-    }
+    //     }
+    //     else {
+    //     }
+    // }
 
-    function handleeffectsclick() {
-        if (!iseffects) {
-            console.log("effects clicked set true");
-            setiseffects(true);
-            setisdescription(false);
-            setisstats(false);
-            setismoves(false);
-            setisevolutions(false);
+    // function handleeffectsclick() {
+    //     if (!iseffects) {
+    //         console.log("effects clicked set true");
+    //         setiseffects(true);
+    //         setisdescription(false);
+    //         setisstats(false);
+    //         setismoves(false);
+    //         setisevolutions(false);
 
 
-        }
-        else {
-        }
-    }
+    //     }
+    //     else {
+    //     }
+    // }
 
-    function handleevolutionsclick() {
-        if (!isevolutions) {
-            console.log("evolutions clicked set true");
-            setisevolutions(true);
-            setisdescription(false);
-            setisstats(false);
-            setismoves(false);
-            setiseffects(false);
+    // function handleevolutionsclick() {
+    //     if (!isevolutions) {
+    //         console.log("evolutions clicked set true");
+    //         setisevolutions(true);
+    //         setisdescription(false);
+    //         setisstats(false);
+    //         setismoves(false);
+    //         setiseffects(false);
 
-        }
-        else {
-        }
-    }
+    //     }
+    //     else {
+    //     }
+    // }
 
 
 
@@ -450,8 +444,6 @@ const pokemontypes = {
         }
 
     }, [fetchingdata, pokemonid]);
-
-    console.log(data);
 
     return (
         <div className="supercontainer">

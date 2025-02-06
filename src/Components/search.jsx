@@ -1,9 +1,9 @@
 
 import './Search.css';
-import { useEffect,useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 function Search() {
-    
+
     const Background = {
         normal: "linear-gradient(to bottom, rgba(183, 183, 183, 0.94), rgba(142, 142, 142, 0.94), rgba(102, 102, 102, 0.94))",
         fire: "linear-gradient(to bottom, rgba(255, 152, 67, 0.94), rgba(230, 94, 25, 0.94), rgba(191, 74, 12, 0.94))",
@@ -37,59 +37,59 @@ function Search() {
         setSearchResults(data.results);
         const tempdata = data.results;
 
-    
-        setAllNameList (tempdata.map((object, index)=> {
-                    const tempid = index + 1;
-                    return {name: object.name, id: tempid, image: `https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${tempid.toString().padStart(3, "0")}.png`}
+
+        setAllNameList(tempdata.map((object, index) => {
+            const tempid = index + 1;
+            return { name: object.name, id: tempid, image: `https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${tempid.toString().padStart(3, "0")}.png` }
         }))
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         if (searchResults.length === 0) {
             getdataall();
         }
     }, [])
-    
- 
-    
-
-   async function getpokemontype(Arrayofobjects_with_id) {
-
-    const Arrayofobjects_with_id_type_and_name = await Promise.all( Arrayofobjects_with_id.map(async (object_with_id) =>{
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${object_with_id.id}`);
-        const data = await response.json();
-        
-        return{ name : object_with_id.name, id: object_with_id.id, type: data.types[0].type.name, image : object_with_id.image}
-    })
-    )
-      return Arrayofobjects_with_id_type_and_name
-   }
 
 
 
-   useEffect(() => {
-    if (allnamelist.length === 1025 && searchvalue.length > 0) {
-        // Filter Pokémon names that include the search value
-        const filterednames = allnamelist.filter(name => name.name.includes(searchvalue));
-        
 
-        // Take only the top 15 matches
-        const showresults = filterednames.slice(0, 15);
+    async function getpokemontype(Arrayofobjects_with_id) {
 
-        // Fetch Pokémon types and update state
-        
+        const Arrayofobjects_with_id_type_and_name = await Promise.all(Arrayofobjects_with_id.map(async (object_with_id) => {
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${object_with_id.id}`);
+            const data = await response.json();
+
+            return { name: object_with_id.name, id: object_with_id.id, type: data.types[0].type.name, image: object_with_id.image }
+        })
+        )
+        return Arrayofobjects_with_id_type_and_name
+    }
+
+
+
+    useEffect(() => {
+        if (allnamelist.length === 1025 && searchvalue.length > 0) {
+            // Filter Pokémon names that include the search value
+            const filterednames = allnamelist.filter(name => name.name.includes(searchvalue));
+
+
+            // Take only the top 15 matches
+            const showresults = filterednames.slice(0, 15);
+
+            // Fetch Pokémon types and update state
+
             getpokemontype(showresults).then((data) => {
                 setresults(data);
             });
-       
-    }    
-}, [searchvalue, allnamelist]); // Ensure dependencies are properly included
+
+        }
+    }, [searchvalue, allnamelist]); // Ensure dependencies are properly included
 
 
 
-    
 
-    
+
+
 
 
 
@@ -106,19 +106,21 @@ function Search() {
                 onChange={(e) => setSearchValue(e.target.value)}
             />
             <datalist id='pokemon-list'>
-                
+
             </datalist>
             <div className="Search-search-results">
-                
-                {resultstoshow.map((pokemon , index)=> {
-                    return <NavLink to={`/pokemon/${pokemon.id}`} key={index}><div style={{background:Background[pokemon.type]}} className="Search-pokemon-card">
-                    <img src={pokemon.image} alt="Pokemon" />
-                    <h3>{pokemon.name}</h3>
-                    <p>ID #{pokemon.id}</p>
-                </div></NavLink>
+
+                {resultstoshow.map((pokemon, index) => {
+                    return <NavLink to={`/pokemon/${pokemon.id}`} key={index}>
+                        <div style={{ background: Background[pokemon.type] }} className="Search-pokemon-card">
+                            <img src={pokemon.image} alt="Pokemon" />
+                            <h3>{pokemon.name}</h3>
+                            <p>ID #{pokemon.id}</p>
+                        </div>
+                    </NavLink>
                 })}
 
-                
+
                 {/* <!-- More cards... --> */}
             </div>
         </div>

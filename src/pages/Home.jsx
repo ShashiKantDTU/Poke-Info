@@ -6,17 +6,19 @@ import Search from "../Components/search";
 import Footer from "../Components/Footer";
 import MainPage from "../Components/MainPage";
 import NewPokemonCard from "./NewPokemonCard";
-
+import Loading from '../Components/loading.jsx'
 function Home() {
-    const anynum = 20;      // Number of pokemons to be displayed Max is 90
+    const anynum = 24;      // Number of pokemons to be displayed Max is 90
     const [randomids, setRandomids] = useState(ReturnRandomArrayofanynum(anynum));
-
-
+    const [isloading , setisloading] = useState(true)
 
     const [Allpokemons, setAllpokemons] = useState([]);
 
-
+    
     async function GetData(id, index) {
+        if(Allpokemons.length === 0){
+            setisloading(true)
+        }
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
         const data = await response.json();
         const imgid = data.id.toString().padStart(3, "0");
@@ -40,18 +42,19 @@ function Home() {
 
         if (Allpokemons.length === anynum) {
             setAllpokemons(Allpokemons);
+            setisloading(false);
         }
         else {
 
         }
-
+            
     }
 
     useEffect(
         () => {
-            randomids.length > 0 ? randomids.map((id, index) => GetData(id, index)) : console.log("No data");
+            randomids.length === anynum ? randomids.map((id, index) => GetData(id, index)) : console.log("No data");
             setAllpokemons([]);
-        }, [randomids]
+        }, []
     )
 
 
@@ -63,12 +66,15 @@ function Home() {
             <Search/>
             </div>
             <main>
+                {isloading ? <div className="main-loadingcontainer"> <Loading></Loading> </div>: 
+                
                 <div className="Home-pokemon-cards">
+                    
                     {(Allpokemons.map((pokemon) => {
                         return (
 
                             <NewPokemonCard
-                                key={pokemon.serial}
+                                key = {pokemon.id}
                                 id={`#${pokemon.id.toString().padStart(3, "0")}`}
                                 pokemonname={pokemon.name}
                                 img = {pokemon.sprite1}
@@ -85,6 +91,7 @@ function Home() {
                     }))}
 
                 </div>
+                }
             </main>
             <Footer/>
          </MainPage>

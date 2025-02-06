@@ -67,16 +67,16 @@ function NewPokemonCard(props) {
         // RED
         <div className="NewPokemonCard-main-container">
             {/* Blue */}
-            <div className={`NewPokemonCard-card ${props.Type1 === "" ? "" : (props.Type1.charAt(0) + props.Type1.slice(1))  }`} style={getBackgroundStyle(props.Type1)}>
+            <div className={`NewPokemonCard-card ${props.Type1 === "" ? "" : (toString(props.Type1).charAt(0) + toString(props.Type1).slice(1))  }`} style={getBackgroundStyle(props.Type1)}>
 
                 <div className='NewPokemonCard-idtext'  >
-                    <p>{props.id}</p>
+                    <p>{props?.id}</p>
                 </div>
                 <div className='NewPokemonCard-imagecontainer' style={{ height: props.pokemonname.length > 13 ? "33%" : "43%"}}>
 
                     <img src={props.img} alt={props.pokemonname} />
                 </div>
-                <div className="NewPokemonCard-content" style={{ height: props.pokemonname.length > 13 ? "50%" : "40%" }} >
+                <div className="NewPokemonCard-content" style={{ height: props?.pokemonname?.length > 13 ? "50%" : "40%" }} >
                     <div className='NewPokemonCard-name'><h1 >{props.pokemonname}</h1></div>
                     <div className='NewPokemonCard-types'>
                         {props.Type2 === "No second type" ? <div className='NewPokemonCard-type1' style={getTypeStyle(props.Type1)}>{props.Type1}</div> :
