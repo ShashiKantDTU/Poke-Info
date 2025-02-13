@@ -325,14 +325,14 @@ function EvoChain(props) {
       const imgid = alldata.id.toString().padStart(3, "0");
 
       const response1 = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemon.toLowerCase()}/`);
-        if (!response1.ok) throw new Error("Pokémon not found");
-        
-        const data = await response1.json();
-        
-        // Find the first English description
-        const entry = data.flavor_text_entries.find(entry => entry.language.name === "en");
-        
-        const description = entry ? entry.flavor_text.replace(/\f/g, " ") : "Description not available.";
+      if (!response1.ok) throw new Error("Pokémon not found");
+
+      const data = await response1.json();
+
+      // Find the first English description
+      const entry = data.flavor_text_entries.find(entry => entry.language.name === "en");
+
+      const description = entry ? entry.flavor_text.replace(/\f/g, " ") : "Description not available.";
 
       return {
         id: alldata.id,
@@ -579,7 +579,7 @@ function EvoChain(props) {
 
 
           evolutiondata?.variations?.length > 2 ?
-            <div style={{ width: "100%", height: "100%", overflowY :"auto" }}>
+            <div style={{ width: "100%", height: "100%", overflowY: "auto" }}>
 
 
 
@@ -662,10 +662,57 @@ function EvoChain(props) {
                       <>
                         <div className='evo-card3-container'>
 
+
+
+
+
+                          {/* <div className='evo-card3-buttons'>
+                            <button onClick={() => { setcard3(1) }} className='evo-card3-btn evo-card3-btn1'><span style={{color: card3 === 1 ? "red":""}}>{evolutiondata?.variations[0].variations[0]?.name}</span></button>
+                            <button onClick={() => { setcard3(2) }} className='evo-card3-btn evo-card3-btn1'><span style={{color: card3 === 1 ? "":"red"}}>{evolutiondata?.variations[0].variations[1]?.name}</span></button>
+                          </div> */}
+
+
                           <div className='evo-card3-buttons'>
-                            <button onClick={() => { setcard3(1) }} className='evo-card3-btn evo-card3-btn1'><span>{evolutiondata?.variations[0].variations[0]?.name}</span></button>
-                            <button onClick={() => { setcard3(2) }} className='evo-card3-btn evo-card3-btn1'><span>{evolutiondata?.variations[0].variations[1]?.name}</span></button>
+                            <button
+                              onClick={() => setcard3(1)}
+                              style={{
+
+                                borderColor: card3 === 1 ? '#ef4444' : '#e5e7eb',
+                                backgroundColor: card3 === 1 ? '#fef2f2' : 'white',
+                                boxShadow: card3 === 1 ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none'
+                              }}
+                              className='evo-card3-btn evo-card3-btn1'
+                            >
+                              <span style={{
+                                color: card3 === 1 ? '#dc2626' : '#4b5563',
+                                transition: 'color 0.2s ease-in-out'
+                              }}>
+                                {evolutiondata?.variations[0].variations[0]?.name}
+                              </span>
+                            </button>
+
+                            <button
+                              onClick={() => setcard3(2)}
+                              style={{
+                                
+                                borderColor: card3 === 2 ? '#ef4444' : '#e5e7eb',
+                                backgroundColor: card3 === 2 ? '#fef2f2' : 'white',
+                                boxShadow: card3 === 2 ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none'
+                              }}
+                              className='evo-card3-btn evo-card3-btn1'
+                            >
+                              <span style={{
+                                color: card3 === 2 ? '#dc2626' : '#4b5563',
+                                transition: 'color 0.2s ease-in-out'
+                              }}>
+                                {evolutiondata?.variations[0].variations[1]?.name}
+                              </span>
+                            </button>
                           </div>
+
+
+
+
                           <div className='evo-card3aside'>
                             <div onClick={() => { setcard3(1) }} style={{ width: card3 === 1 ? "100%" : "0" }} className='evo-card3_1'>
                               <div style={getBackgroundStyle(evolutiondata?.variations[0].variations[0]?.type1)} className='evo-containerbody'>

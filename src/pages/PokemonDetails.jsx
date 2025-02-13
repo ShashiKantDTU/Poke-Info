@@ -240,18 +240,18 @@ const pokemontypes = {
 }
 
 
-    const [isdescription, setisdescription] = useState(true);
-    const [isstats, setisstats] = useState(false);
-    const [ismoves, setismoves] = useState(false);
-    const [iseffects, setiseffects] = useState(false);
-    const [isevolutions, setisevolutions] = useState(false);
+    // const [isdescription, setisdescription] = useState(true);
+    // const [isstats, setisstats] = useState(false);
+    // const [ismoves, setismoves] = useState(false);
+    // const [iseffects, setiseffects] = useState(false);
+    // const [isevolutions, setisevolutions] = useState(false);
 
 
-    const description = document.getElementsByClassName("PokemonDetails-descriptionbutton")
-    const stats = document.getElementsByClassName("PokemonDetails-statsbtn")
-    const moves = document.getElementsByClassName("PokemonDetails-movesbtn")
-    const effects = document.getElementsByClassName("PokemonDetails-effectsbtn")
-    const evolutions = document.getElementsByClassName("PokemonDetails-evolutionsbtn")
+    // const description = document.getElementsByClassName("PokemonDetails-descriptionbutton")
+    // const stats = document.getElementsByClassName("PokemonDetails-statsbtn")
+    // const moves = document.getElementsByClassName("PokemonDetails-movesbtn")
+    // const effects = document.getElementsByClassName("PokemonDetails-effectsbtn")
+    // const evolutions = document.getElementsByClassName("PokemonDetails-evolutionsbtn")
 
 
 
@@ -412,7 +412,8 @@ const pokemontypes = {
             height: height,
             weight: weight,
             getstats: data.stats,
-            pokedescription: await getPokemonDescription(pokemonid)
+            pokedescription: await getPokemonDescription(pokemonid),
+            
         };
         setThemecolor(TYPE_COLORS[obj.type1]);
         const statsObject = data.stats.reduce((acc, stat) => {
@@ -484,7 +485,7 @@ const pokemontypes = {
 
 
                     <div className="PokemonDetails-pokemonDetails">
-                        <HeroSection pokemontypes ={pokemontypes} data = {data} id = {parameters.id} />
+                        <HeroSection pokemontypes ={pokemontypes} data = {data} id = {parameters.id} isloading = {fetchingdata} />
                     </div>
 
                 </div>

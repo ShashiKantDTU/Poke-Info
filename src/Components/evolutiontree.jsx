@@ -24,26 +24,6 @@ const EvolutionTree = ({ evolutionData }) => {
         link = {pokemon.id}
         ></NewPokemonCard>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        {/* <div className="pokemon-card">
-          <img src={pokemon.sprite1} alt={pokemon.name} className="pokemon-image" />
-          <h3 className="pokemon-name">{pokemon.name}</h3>
-          <p className="pokemon-type">
-            {pokemon.type1} {pokemon.type2 !== "No second type" ? `/ ${pokemon.type2}` : ""}
-          </p>
-        </div> */}
-  
         {/*  Added check to prevent crashes */}
         {pokemon.variations && pokemon.variations.length > 0 && (
           <div className="evolution-branches">
@@ -71,20 +51,6 @@ const EvolutionTree = ({ evolutionData }) => {
 
       
       {renderEvolution(evolutionData)}
-
-      {/* Modal for Pokémon Details */}
-      {/* {selectedPokemon && (
-        <div className="modal">
-          <div className="modal-content">
-            <h2>{selectedPokemon.name}</h2>
-            <img src={selectedPokemon.sprite1} alt={selectedPokemon.name} />
-            <p>Type: {selectedPokemon.type1} {selectedPokemon.type2 !== "No second type" ? `/ ${selectedPokemon.type2}` : ""}</p>
-            <p>Height: {selectedPokemon.height}m</p>
-            <p>Weight: {selectedPokemon.weight}kg</p>
-            <button onClick={() => setSelectedPokemon(null)}>Close</button>
-          </div>
-        </div>
-      )} */}
     </div>
   );
 };

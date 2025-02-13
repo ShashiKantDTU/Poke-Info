@@ -70,7 +70,13 @@ function Search() {
     useEffect(() => {
         if (allnamelist.length === 1025 && searchvalue.length > 0) {
             // Filter Pokémon names that include the search value
-            const filterednames = allnamelist.filter(name => name.name.includes(searchvalue));
+            const filterednames = allnamelist.filter(entry => {
+                const nameMatch = entry.name.toLowerCase().includes(searchvalue.toLowerCase());
+                const idMatch = entry.id.toString().toLowerCase().includes(searchvalue.toLowerCase());
+                return nameMatch || idMatch;
+            });
+            
+            
 
 
             // Take only the top 15 matches

@@ -249,6 +249,7 @@ justify-content: flex-start;
 .evo-type img {
   width: 20px;
   height: 20px;
+  border-radius: 20px;
 
 }
 
@@ -280,7 +281,7 @@ justify-content: flex-start;
   font-family: 'Poppins', sans-serif;
 
 
-  border: solid;
+  
 }
 
 .evo-card3-btn {
