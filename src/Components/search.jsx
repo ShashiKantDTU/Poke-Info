@@ -1,5 +1,5 @@
 
-import './Search.css';
+import './search.css';
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 function Search() {
